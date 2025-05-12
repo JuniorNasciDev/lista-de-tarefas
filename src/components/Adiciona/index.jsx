@@ -12,7 +12,7 @@ function Adiciona(){
 
         const addAgora = async () => {
         try {
-            const response = await fetch('lista-de-tarefas-production-2ad9.up.railway.app/add/', {
+            const response = await fetch('https://lista-de-tarefas-production-2ad9.up.railway.app/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

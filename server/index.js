@@ -4,7 +4,9 @@ import cors from 'cors';
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+    origin: '*', // Substitua pela URL do seu front-end
+}));
 app.use(express.json());
 
 // Importa as rotas
