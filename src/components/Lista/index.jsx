@@ -10,7 +10,7 @@ function Lista(){
 
 
     async function ListaD(){
-        const response = await fetch ('http://localhost:3001/pega/pega')
+        const response = await fetch ('lista-de-tarefas-production-2ad9.up.railway.app/pega/pega')
         const data = await response.json()
         setLista(data)
     }
@@ -22,7 +22,7 @@ function Lista(){
   const novaDescricao = prompt('Nova descrição:', element.descricao); // Exibe a descrição atual como valor padrão
 
   // Faz a requisição PUT para atualizar no backend
-  const response = await fetch(`http://localhost:3001/edit/edit/${element.id}`, {
+  const response = await fetch(`lista-de-tarefas-production-2ad9.up.railway.appedit/edit/${element.id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ function Lista(){
 
 const deleteS = async (element) => {
   
-  const response = await fetch(`http://localhost:3001/del/del/${element.id}`,{
+  const response = await fetch(`lista-de-tarefas-production-2ad9.up.railway.app/del/del/${element.id}`,{
     method: 'DELETE',
     headers:{
       'Content-Type': 'application/json'
