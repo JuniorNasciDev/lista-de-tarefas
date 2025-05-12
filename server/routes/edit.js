@@ -4,7 +4,7 @@ const router = express.Router();
 import db from './bancoDados.js'
 
 
-router.put('/edit/:id', async (req,res)=>{
+router.put('https://lista-de-tarefas-production-2ad9.up.railway.app/edit/:id', async (req,res)=>{
 const id = (req.params.id);
 const {titulo, descricao} = req.body;
 

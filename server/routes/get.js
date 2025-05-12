@@ -5,7 +5,7 @@ import db from '../routes/bancoDados.js'
 
 
 
-router.get('/pega', async (req, res)=>{
+router.get('https://lista-de-tarefas-production-2ad9.up.railway.app/pega', async (req, res)=>{
     res.status(200).json(await getDados())
 })
 

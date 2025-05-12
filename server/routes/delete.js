@@ -3,7 +3,7 @@ const router = express.Router();
 import db from './bancoDados.js'
 
 
-router.delete('/del/:id', async (req, res)=>{
+router.delete('https://lista-de-tarefas-production-2ad9.up.railway.app/del/:id', async (req, res)=>{
     const id = (req.params.id);
     await deletaItem(id)
      res.status(200).json({ mensagem: 'Tarefa removida com sucesso'});

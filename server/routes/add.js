@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 
 
-router.post('/add', async (req, res)=>{
+router.post('https://lista-de-tarefas-production-2ad9.up.railway.app/add', async (req, res)=>{
     const {titulo, descricao} = req.body
     const novaTarefa = {
         id: uuidv4(),
