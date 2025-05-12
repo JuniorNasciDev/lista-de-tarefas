@@ -1,0 +1,37 @@
+
+
+.page-entry{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.box-entry{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    margin: 5px 0px;
+    font-size: 1.5em;
+    padding: 1em;
+    resize: none;
+}
+
+textarea::placeholder,input::placeholder{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.title-entry{
+    padding: 0.5em;
+}
+
+button{
+    font-size: 2em;
+    cursor: pointer;
+}
+
